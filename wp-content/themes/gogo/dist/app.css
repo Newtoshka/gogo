@@ -189,6 +189,9 @@ body {
 .slider-heading_subtitle {
   margin-bottom: 40px;
 }
+.slider .slick-list {
+  margin: 0 -20px;
+}
 .slider .slick-track {
   display: flex !important;
 }
@@ -218,6 +221,12 @@ body {
 }
 .slider .slick-arrow.slick-next {
   right: -58px;
+}
+.slider-inner:not(.slick-initialized) {
+  display: none;
+}
+.slider-inner.slick-initialized + .slider-loader {
+  display: none;
 }
 .slider .slide {
   padding: 36px 27px;

@@ -42,7 +42,9 @@ body {
   &-heading_subtitle {
     margin-bottom: 40px;
   }
-
+  .slick-list{
+    margin: 0 -20px;
+  }
   .slick-track {
     display: flex !important;
   }
@@ -78,7 +80,12 @@ body {
       right: -58px;
     }
   }
-
+  &-inner:not(.slick-initialized){
+    display:none
+  }
+  &-inner.slick-initialized + &-loader {
+    display: none;
+  }
   .slide {
     padding: 36px 27px;
     margin: 0px 10px;
