@@ -5,7 +5,7 @@ $list_subtitle = get_field('list_subtitle');
 $list_of_blocks = get_field('list_of_blocks');
 ?>
 
-<section class="list light-blue-bg relative">
+<section class="list light-blue-bg relative" data-aos="fade-in">
     <div class="list-heading light-black text-align-center">
         <h1 class="list-heading_title h1 ">
             <?php echo $list_title; ?>

@@ -3,7 +3,7 @@ $slider_title = get_field('slider_title');
 $slider_subtitle = get_field('slider_subtitle');
 $list_of_slides = get_field('list_of_slides');
 ?>
-<section class="slider blue-bg relative">
+<section class="slider blue-bg relative" data-aos="fade-in">
     <div class="slider-heading white text-align-center">
         <h1 class="slider-heading_title h1 ">
             <?php echo $slider_title; ?>

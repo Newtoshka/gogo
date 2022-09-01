@@ -11,7 +11,7 @@
 <body <?php body_class("gogo"); ?>>
     <?php wp_body_open(); ?>
 
-    <header class='white-bg'>
+    <header class='white-bg' data-aos="fade-in">
         <div class="header-logo container flex flex-left mx-auto">
             <?php echo the_custom_logo(); ?>
         </div>
