@@ -1,0 +1,133 @@
+@import './helpers.scss';
+@import '../static/fonts.css';
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+// Header
+.header-logo {
+  padding: 23px 0;
+
+  @media(max-width: 992px) {
+    justify-content: center;
+  }
+}
+
+// Slider
+.slider {
+  padding-top: 49px;
+  padding-bottom: clamp(1.25rem, 0.6331rem + 2.5974vw, 3.75rem);
+
+  &::after {
+    content: '';
+    background-color: $magenta;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 4px rgba(255, 56, 89, 0.2);
+    z-index: 1;
+  }
+
+  &-heading_title {
+    margin-bottom: 5px;
+  }
+
+  &-heading_subtitle {
+    margin-bottom: 40px;
+  }
+
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    border: unset;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color .3s ease;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    &.slick-prev {
+      left: -58px;
+    }
+
+    &.slick-next {
+      right: -58px;
+    }
+  }
+
+  .slide {
+    padding: 36px 27px;
+    margin: 0px 10px;
+
+    @media(min-width: 992px) {
+      max-width: 332px;
+    }
+
+    &-title,
+    &-description {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+// Under slider section
+.list {
+  padding-bottom: clamp(1.25rem, 0.4481rem + 3.3766vw, 4.5rem);
+
+  &-heading {
+
+    &_title {
+      padding-top: clamp(1.25rem, 0.8028rem + 1.8831vw, 3.0625rem);
+      margin-bottom: 3px;
+    }
+
+    &_text {
+      margin-bottom: 36px;
+    }
+
+    &_subtitle {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-inner {
+    row-gap: 20px;
+
+    @media(min-width: 992px) {
+      column-gap: 20px;
+      grid-template-columns: repeat(3, minmax(0, 332px));
+    }
+    .block{
+      padding: 36px 27px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+      &-title,
+      &-description {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+// Colors
+$blue: #215398;
+$lightBlue: #F1F6FC;
+$black: #000;
+$lightBlack: #2D3236;
+$gray: #808080;
+$white: #fff;
+$magenta: #FF3859;
+$aqua: #28A9E0;
+
+.blue {
+    color: $blue;
+
+    &-bg {
+        background-color: $blue;
+    }
+}
+
+.light-blue {
+    color: $lightBlue;
+
+    &-bg {
+        background-color: $lightBlue;
+    }
+}
+
+.black {
+    color: $black;
+
+    &-bg {
+        background-color: $black;
+    }
+}
+
+.light-black {
+    color: $lightBlack;
+
+    &-bg {
+        background-color: $lightBlack;
+    }
+}
+
+.gray {
+    color: $gray;
+
+    &-bg {
+        background-color: $gray;
+    }
+}
+
+.white {
+    color: $white;
+
+    &-bg {
+        background-color: $white;
+    }
+}
+
+.magenta {
+    color: $magenta;
+
+    &-bg {
+        background-color: $magenta;
+    }
+}
+
+.aqua {
+    color: $aqua;
+
+    &-bg {
+        background-color: $aqua;
+    }
+}
+
+// container
+.container {
+    width: calc(100% - 40px);
+
+    @media(min-width: 1200px) {
+        width: 61.2%;
+    }
+
+
+    &--small {
+        @extend .container;
+
+        @media(min-width: 1200px) {
+            width: 53.96%;
+        }
+    }
+}
+
+// text helpers
+.h1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.h2 {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.h3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.body-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+
+    &--big {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+.h1,
+.h2,
+.h3,
+.body-text,
+p {
+    margin: 0;
+}
+
+.text-align {
+    &-center {
+        text-align: center;
+    }
+}
+
+// Builidng helpers
+.flex {
+    display: flex;
+
+    &-left {
+        justify-content: start;
+    }
+
+    &-right {
+        justify-content: end;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+}
+
+.grid {
+    display: grid;
+
+    @media(min-width: 992px) {
+        grid-auto-flow: column;
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
