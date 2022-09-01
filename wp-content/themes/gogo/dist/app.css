@@ -217,13 +217,16 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
 }
 .slider .slick-arrow.slick-prev {
-  left: -58px;
+  left: -80px;
 }
 .slider .slick-arrow.slick-next {
-  right: -58px;
+  right: -80px;
 }
 .slider-inner:not(.slick-initialized) {
   display: none;
+}
+.slider-loader {
+  width: 10%;
 }
 .slider-inner.slick-initialized + .slider-loader {
   display: none;

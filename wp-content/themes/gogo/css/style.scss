@@ -73,15 +73,18 @@ body {
     }
 
     &.slick-prev {
-      left: -58px;
+      left: -80px;
     }
 
     &.slick-next {
-      right: -58px;
+      right: -80px;
     }
   }
   &-inner:not(.slick-initialized){
     display:none
+  }
+  &-loader {
+    width: 10%;
   }
   &-inner.slick-initialized + &-loader {
     display: none;
